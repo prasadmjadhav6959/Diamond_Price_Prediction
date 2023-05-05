@@ -6,8 +6,8 @@ df = pd.read_csv('diamonds.csv')
 st.set_page_config(page_title="Predict", page_icon="🤔",layout="wide")
 st.title('Diamond Price Prediction')
 
-scalar= load(open('pickle/standard_scaler.pkl', 'rb'))
-model= load(open('pickle/lr_model.pkl', 'rb'))
+scalar = load(open('standard_scaler.pkl', 'rb'))
+model = load(open('lr_model.pkl', 'rb'))
 
 def predict(carat, cut, color, clarity, depth, table, x, y, z):
 
